@@ -4,6 +4,7 @@ import Border from "./Border";
 import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
 import LoadedImage from "./LoadedImage";
+import OrLine from "./OrLine";
 import SimpleLine from "./SimpleLine";
 import Title from "./Title";
 import WallLine from "./WallLine";
@@ -60,7 +61,7 @@ const Card = () => {
           y={0.02 * HEIGHT}
           width={0.8 * WIDTH}
         />
-        <ContainedText
+        <ContainedText  
           x={0.1 * WIDTH}
           y={0.55 * HEIGHT}
           width={0.8 * WIDTH}
@@ -76,13 +77,14 @@ const Card = () => {
           middleWidth={0.1 * WIDTH}
           stroke="black"
         /> */}
-        <SimpleLine
+        {/* <SimpleLine
           x={0}
           y={0.8 * HEIGHT}
           vertical={false}
           end={WIDTH}
           stroke="black"
-        />
+        /> */}
+        <OrLine y={500} width={WIDTH} />
       </Stage>
     </div>
   );
