@@ -12,11 +12,14 @@ export type EnergyProps = {
 };
 
 const EnergyCost = ({ energy, x, y, fontSize, width, height }: EnergyProps) => {
-  const [image] = useImage("https://pic.onlinewebfonts.com/svg/img_428473.png");
+  const [image] = useImage(
+    "https://pic.onlinewebfonts.com/svg/img_428473.png",
+    "anonymous"
+  );
   const imageX = energy.toString().length * fontSize * 0.6;
   return (
     <Layer x={x} y={y}>
-        <Text text={energy.toString()} fontSize={fontSize} />
+      <Text text={energy.toString()} fontSize={fontSize} />
       <Image image={image} width={width} height={height} x={imageX} />
     </Layer>
   );
