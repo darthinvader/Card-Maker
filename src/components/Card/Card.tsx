@@ -1,6 +1,7 @@
 import { Image, Layer, Rect, Stage, Text } from "react-konva";
 
 import Border from "./Border";
+import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
 import LoadedImage from "./LoadedImage";
 import Title from "./Title";
@@ -56,6 +57,14 @@ const Card = () => {
           x={0.1 * WIDTH}
           y={0.02 * HEIGHT}
           width={0.8 * WIDTH}
+        />
+        <ContainedText
+          x={0.1 * WIDTH}
+          y={0.55 * HEIGHT}
+          width={0.8 * WIDTH}
+          height={0.25 * HEIGHT}
+          italics={true}
+          text="asddsads"
         />
       </Stage>
     </div>
