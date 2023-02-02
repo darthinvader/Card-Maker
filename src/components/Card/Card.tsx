@@ -4,7 +4,9 @@ import Border from "./Border";
 import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
 import LoadedImage from "./LoadedImage";
+import SimpleLine from "./SimpleLine";
 import Title from "./Title";
+import WallLine from "./WallLine";
 import { useRef } from "react";
 
 const WIDTH = 400;
@@ -65,6 +67,21 @@ const Card = () => {
           height={0.25 * HEIGHT}
           italics={true}
           text="asddsads"
+        />
+        {/* <WallLine
+          x={0}
+          y={0.8 * HEIGHT}
+          height={0.05 * HEIGHT}
+          width={WIDTH}
+          middleWidth={0.1 * WIDTH}
+          stroke="black"
+        /> */}
+        <SimpleLine
+          x={0}
+          y={0.8 * HEIGHT}
+          vertical={false}
+          end={WIDTH}
+          stroke="black"
         />
       </Stage>
     </div>
