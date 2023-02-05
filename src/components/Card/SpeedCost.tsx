@@ -2,21 +2,30 @@ import { Image, Layer, Rect, Text } from "react-konva";
 
 import useImage from "use-image";
 
-export type EnergyProps = {
-  energy: number;
-  x?: number;
-  y?: number;
-  fontSize: number;
+export type SpeedCostProps = {
+  speedCost: number;
+  x: number;
+  y: number;
   width: number;
   height: number;
+  fontSize: number;
 };
 
-const EnergyCost = ({ energy, x, y, fontSize, width, height }: EnergyProps) => {
+const SpeedCost = ({
+  speedCost,
+  x,
+  y,
+  width,
+  height,
+  fontSize,
+}: SpeedCostProps) => {
   const [image] = useImage(
-    "https://cdn.onlinewebfonts.com/svg/img_449763.png",
+    "https://cdn-icons-png.flaticon.com/512/2612/2612924.png",
     "anonymous"
   );
-  const imageX = energy.toString().length * fontSize * 0.6;
+
+  const imageX = speedCost.toString().length * fontSize * 0.6;
+
   return (
     <Layer x={x} y={y}>
       <Rect
@@ -29,10 +38,10 @@ const EnergyCost = ({ energy, x, y, fontSize, width, height }: EnergyProps) => {
         shadowColor="black"
         stroke="black"
       />
-      <Text text={energy.toString()} fontSize={fontSize} />
+      <Text text={speedCost.toString()} fontSize={fontSize} />
       <Image image={image} width={width} height={height} x={imageX} />
     </Layer>
   );
 };
 
-export default EnergyCost;
+export default SpeedCost;

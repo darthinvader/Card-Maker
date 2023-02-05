@@ -4,8 +4,10 @@ import Border from "./Border";
 import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
 import LoadedImage from "./LoadedImage";
+import MoneyCost from "./MoneyCost";
 import OrLine from "./OrLine";
 import SimpleLine from "./SimpleLine";
+import SpeedCost from "./SpeedCost";
 import Title from "./Title";
 import WallLine from "./WallLine";
 import { useRef } from "react";
@@ -38,14 +40,25 @@ const Card = () => {
     <div>
       {/* <button onClick={handleExport}> </button> */}
       <Stage ref={stageRef} width={WIDTH} height={HEIGHT}>
+        <Layer>
+          <Rect width={WIDTH} height={HEIGHT} fill="lightgray" />
+        </Layer>
         <Border width={WIDTH} height={HEIGHT} />
-        <EnergyCost
+        {/* <EnergyCost
           x={0.02 * WIDTH}
           y={0.02 * HEIGHT}
           energy={5}
           fontSize={0.05 * HEIGHT}
-          width={0.05 * WIDTH}
-          height={0.05 * HEIGHT}
+          width={0.055 * WIDTH}
+          height={0.045 * HEIGHT}
+        /> */}
+        <SpeedCost
+          x={0.02 * WIDTH}
+          y={0.02 * HEIGHT}
+          speedCost={3}
+          fontSize={0.05 * HEIGHT}
+          width={0.055 * WIDTH}
+          height={0.045 * HEIGHT}
         />
         <LoadedImage
           x={0.05 * WIDTH}
@@ -61,14 +74,14 @@ const Card = () => {
           y={0.02 * HEIGHT}
           width={0.8 * WIDTH}
         />
-        <ContainedText  
+        {/* <ContainedText
           x={0.1 * WIDTH}
           y={0.55 * HEIGHT}
           width={0.8 * WIDTH}
           height={0.25 * HEIGHT}
           italics={true}
           text="asddsads"
-        />
+        /> */}
         {/* <WallLine
           x={0}
           y={0.8 * HEIGHT}
@@ -84,7 +97,15 @@ const Card = () => {
           end={WIDTH}
           stroke="black"
         /> */}
-        <OrLine y={500} width={WIDTH} />
+        <MoneyCost
+          moneyCost={5}
+          x={0}
+          y={0.85 * HEIGHT}
+          width={WIDTH}
+          height={0.15 * HEIGHT}
+          fontSize={0.1 * HEIGHT}
+        />
+        {/* <OrLine y={500} width={WIDTH} /> */}
       </Stage>
     </div>
   );
