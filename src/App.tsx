@@ -1,5 +1,6 @@
 import ActionCard from "./components/Card/ActionCard";
 import Card from "./components/Card/Card";
+import CorpoCard from "./components/Card/CorpoCard";
 import PitStopCard from "./components/Card/PitStopCard";
 
 function App() {
@@ -22,6 +23,22 @@ function App() {
         funtext="Come on you can do it"
         energyCost={5}
         moneyCost={5}
+      />
+      <CorpoCard
+        height={600}
+        width={400}
+        title="CorpoCard"
+        url="https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg"
+        energyCost1={3}
+        speedCost1={2}
+        money1={7}
+        effect1="Really long fucking text"
+        funtext1="Ahhahahah this is really long"
+        energyCost2={5}
+        speedCost2={4}
+        money2={12}
+        effect2="Really long fucking text"
+        funtext2="Ahhahahah this is really long"
       />
     </div>
   );

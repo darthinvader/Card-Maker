@@ -17,17 +17,23 @@ const ContainedText = ({
   height,
   italics,
 }: ContainedTextProps) => {
+  const maxSize = Math.sqrt(width * height) / 8;
+  const minSize = Math.sqrt(width * height) / 10;
+  let fontSize = Math.sqrt(height * width) / text.length;
+  fontSize = Math.min(maxSize, fontSize);
+  fontSize = Math.max(minSize, fontSize);
   return (
-    <Layer x={x} y={y}>
-      <Text
-        width={width}
-        height={height}
-        text={text}
-        align="center"
-        fontStyle={italics ? "italic" : undefined}
-        verticalAlign="middle"
-      />
-    </Layer>
+    <Text
+      x={x}
+      y={y}
+      width={width}
+      height={height}
+      text={text}
+      align="center"
+      fontSize={fontSize}
+      fontStyle={italics ? "italic" : undefined}
+      verticalAlign="middle"
+    />
   );
 };
 

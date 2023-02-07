@@ -11,15 +11,15 @@ export type TitleProps = {
 
 const Title = ({ x, y, width, height, fontSize, text }: TitleProps) => {
   return (
-    <Layer x={x} y={y}>
-      <Text
-        width={width}
-        height={height}
-        fontSize={fontSize}
-        text={text}
-        align="center"
-      />
-    </Layer>
+    <Text
+      x={x}
+      y={y}
+      width={width}
+      height={height}
+      fontSize={fontSize}
+      text={text}
+      align="center"
+    />
   );
 };
 export default Title;

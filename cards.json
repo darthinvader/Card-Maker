@@ -1,34 +1,40 @@
-[
-  {
-    "cardType": "Corporation",
-    "logo": "imageUrl",
-    "name": "MegaHard Drives",
-    "energyCost1": "2",
-    "speedCost1": "2",
-    "money1": "5",
-    "effect1": "",
-    "funtext1": "You throw hard drives at the viewers. Two injuries occured.",
-    "energyCost2": "4",
-    "speedCost2": "4",
-    "money2": "12",
-    "effect2": "",
-    "funtext2": "Also 1 fatality"
-  },
-  {
-    "cardType": "Pit Stop",
-    "logo": "imageUrl",
-    "name": "Luig1 the flash",
-    "effect": "Go to the track",
-    "funtext": "Fastest Wheel Changer on the planet. Works as intern."
-  },
-  {
-    "cardType": "Action",
-    "logo": "imageUrl",
-    "name": "Turbo",
-    "actionType": "Performance",
-    "energyCost": "6",
-    "effect": "Gain 8 Speed",
-    "funtext": "Engine goes brrrrr",
-    "moneyCost": "6"
-  }
-]
+{
+  "corpo": [
+    {
+      "cardType": "Corporation",
+      "logo": "imageUrl",
+      "name": "MegaHard Drives",
+      "energyCost1": "2",
+      "speedCost1": "2",
+      "money1": "5",
+      "effect1": "",
+      "funtext1": "You throw hard drives at the viewers. Two injuries occured.",
+      "energyCost2": "4",
+      "speedCost2": "4",
+      "money2": "12",
+      "effect2": "",
+      "funtext2": "Also 1 fatality"
+    }
+  ],
+  "pitStop": [
+    {
+      "cardType": "Pit Stop",
+      "logo": "imageUrl",
+      "name": "Luig1 the flash",
+      "effect": "Go to the track",
+      "funtext": "Fastest Wheel Changer on the planet. Works as intern."
+    }
+  ],
+  "action": [
+    {
+      "cardType": "Action",
+      "logo": "imageUrl",
+      "name": "Turbo",
+      "actionType": "Performance",
+      "energyCost": "6",
+      "effect": "Gain 8 Speed",
+      "funtext": "Engine goes brrrrr",
+      "moneyCost": "6"
+    }
+  ]
+}

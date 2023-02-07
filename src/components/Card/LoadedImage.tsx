@@ -11,10 +11,6 @@ export type LoadedImageProps = {
 };
 const LoadedImage = ({ x, y, width, height, url }: LoadedImageProps) => {
   const [image] = useImage(url, "anonymous");
-  return (
-    <Layer x={x} y={y}>
-      <Image width={width} height={height} image={image} />
-    </Layer>
-  );
+  return <Image x={x} y={y} width={width} height={height} image={image} />;
 };
 export default LoadedImage;

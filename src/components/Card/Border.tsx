@@ -11,9 +11,14 @@ export type BorderProps = {
 
 const Border = ({ width, height, x, y }: BorderProps) => {
   return (
-    <Layer>
-      <Rect width={width} height={height} stroke={"black"} strokeWidth={5} />
-    </Layer>
+    <Rect
+      x={x}
+      y={y}
+      width={width}
+      height={height}
+      stroke={"black"}
+      strokeWidth={5}
+    />
   );
 };
 

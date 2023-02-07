@@ -6,29 +6,30 @@ export type OrLineProps = {
   x?: number;
   y: number;
   stroke?: string;
+  height: number;
   width: number;
 };
 
-const OrLine = ({ x = 0, y, width, stroke = "black" }: OrLineProps) => {
-  const fontSize = Math.round(0.06 * width);
+const OrLine = ({ x = 0, y, width, stroke = "black", height }: OrLineProps) => {
+  const fontSize = Math.round(0.3 * height);
   const end = 0.4 * width;
   const start = 0.6 * width;
   const firstPoints = [0, 0, end, 0];
   const secondPoints = [start, 0, width, 0];
-
+  const circleRadius = 0.1 * width;
   return (
-    <Layer x={x} y={y}>
-      <Line points={firstPoints} stroke={stroke} />
+    <>
+      <Line x={x} y={y} points={firstPoints} stroke={stroke} />
       <Text
         text="OR"
-        x={end}
+        x={x + end}
         fontSize={fontSize}
-        y={-0.4 * fontSize}
+        y={y - 0.1 * height}
         width={0.2 * width}
         align="center"
       />
-      <Line points={secondPoints} stroke={stroke} />
-    </Layer>
+      <Line x={x} y={y} points={secondPoints} stroke={stroke} />
+    </>
   );
 };
 

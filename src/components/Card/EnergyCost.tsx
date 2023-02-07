@@ -19,8 +19,10 @@ const EnergyCost = ({ energyCost, x, y, width, height }: EnergyProps) => {
   const text = energyCost + "E";
 
   return (
-    <Layer x={x} y={y}>
+    <>
       <Rect
+        x={x}
+        y={y}
         width={width}
         height={height}
         fill="transparent"
@@ -29,6 +31,8 @@ const EnergyCost = ({ energyCost, x, y, width, height }: EnergyProps) => {
         stroke="black"
       />
       <Text
+        x={x}
+        y={y}
         text={text}
         fontSize={fontSize}
         width={width}
@@ -36,7 +40,7 @@ const EnergyCost = ({ energyCost, x, y, width, height }: EnergyProps) => {
         align="center"
         verticalAlign="middle"
       />
-    </Layer>
+    </>
   );
 };
 

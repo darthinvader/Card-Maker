@@ -10,7 +10,7 @@ export type WallLineProps = {
   middleWidth: number;
 };
 
-const     WallLine = ({
+const WallLine = ({
   x,
   y,
   width,
@@ -36,11 +36,7 @@ const     WallLine = ({
     0,
   ];
 
-  return (
-    <Layer x={x} y={y}>
-      <Line points={points} tension={tension} stroke={stroke} />
-    </Layer>
-  );
+  return <Line x={x} y={y} points={points} tension={tension} stroke={stroke} />;
 };
 
 export default WallLine;

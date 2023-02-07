@@ -1,9 +1,10 @@
+import { Layer, Stage } from "react-konva";
+
 import Border from "./Border";
 import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
 import LoadedImage from "./LoadedImage";
 import MoneyCost from "./MoneyCost";
-import { Stage } from "react-konva";
 import Title from "./Title";
 
 export type ActionCardProps = {
@@ -95,19 +96,20 @@ const ActionCard = ({
       y={moneyCostPaddingTop}
       width={width}
       height={moneyCostHeight}
-      fontSize={0.05 * height}
     />
   );
 
   return (
     <Stage width={width} height={height}>
-      <Border width={width} height={height} />
-      <CardEnergyCost />
-      <CardTitle />
-      <CardImage />
-      <CardEffect />
-      <CardFunText />
-      <CardMoneyCost />
+      <Layer>
+        <Border width={width} height={height} />
+        <CardEnergyCost />
+        <CardTitle />
+        <CardImage />
+        <CardEffect />
+        <CardFunText />
+        <CardMoneyCost />
+      </Layer>
     </Stage>
   );
 };

@@ -8,39 +8,30 @@ export type SpeedCostProps = {
   y: number;
   width: number;
   height: number;
-  fontSize: number;
 };
 
-const SpeedCost = ({
-  speedCost,
-  x,
-  y,
-  width,
-  height,
-  fontSize,
-}: SpeedCostProps) => {
+const SpeedCost = ({ speedCost, x, y, width, height }: SpeedCostProps) => {
   const [image] = useImage(
     "https://cdn-icons-png.flaticon.com/512/2612/2612924.png",
     "anonymous"
   );
-
-  const imageX = speedCost.toString().length * fontSize * 0.6;
+  const text = speedCost + "S";
+  const fontSize = 0.9 * Math.min(width, height);
 
   return (
-    <Layer x={x} y={y}>
+    <>
       <Rect
-        x={-0.15 * width}
-        y={-0.2 * height}
-        width={imageX + 1.3 * width}
-        height={1.4 * height}
+        x={x}
+        y={y}
+        width={width}
+        height={height}
         fill="transparent"
         shadowBlur={10}
         shadowColor="black"
         stroke="black"
       />
-      <Text text={speedCost.toString()} fontSize={fontSize} />
-      <Image image={image} width={width} height={height} x={imageX} />
-    </Layer>
+      <Text x={x} y={y} text={text} fontSize={fontSize} />
+    </>
   );
 };
 

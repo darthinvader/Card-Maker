@@ -19,9 +19,11 @@ const MoneyCost = ({ moneyCost, x, y, width, height }: MoneyCostProps) => {
   const fontSize = 0.7 * Math.min(height, width);
   const points = [0, 0, width, 0];
   return (
-    <Layer x={x} y={y}>
-      <Line points={points} stroke="black" />
+    <>
+      <Line x={x} y={y} points={points} stroke="black" />
       <Text
+        x={x}
+        y={y}
         width={width}
         height={height}
         text={moneyCostString}
@@ -29,7 +31,7 @@ const MoneyCost = ({ moneyCost, x, y, width, height }: MoneyCostProps) => {
         align="center"
         verticalAlign="middle"
       />
-    </Layer>
+    </>
   );
 };
 

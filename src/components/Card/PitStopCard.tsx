@@ -1,7 +1,8 @@
+import { Layer, Stage } from "react-konva";
+
 import Border from "./Border";
 import ContainedText from "./ContainedText";
 import LoadedImage from "./LoadedImage";
-import { Stage } from "react-konva";
 import Title from "./Title";
 
 export type PitStopCardProps = {
@@ -73,11 +74,13 @@ const PitStopCard = ({
 
   return (
     <Stage width={width} height={height}>
-      <Border width={width} height={height} />
-      <CardTitle />
-      <CardImage />
-      <CardEffect />
-      <CardFunText />
+      <Layer>
+        <Border width={width} height={height} />
+        <CardTitle />
+        <CardImage />
+        <CardEffect />
+        <CardFunText />
+      </Layer>
     </Stage>
   );
 };

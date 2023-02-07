@@ -21,11 +21,7 @@ const SimpleLine = ({
   const points = vertical ? [0, start, 0, end] : [start, 0, end, 0];
   console.log(points);
 
-  return (
-    <Layer x={x} y={y}>
-      <Line points={points} tension={tension} stroke={stroke} />
-    </Layer>
-  );
+  return <Line x={x} y={y} points={points} tension={tension} stroke={stroke} />;
 };
 
 export default SimpleLine;
