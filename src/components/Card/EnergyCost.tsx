@@ -1,21 +1,15 @@
 import { Image, Layer, Rect, Text } from "react-konva";
 
-import useImage from "use-image";
-
 export type EnergyProps = {
   energyCost: number;
-  x?: number;
-  y?: number;
+  x: number;
+  y: number;
   width: number;
   height: number;
 };
 
 const EnergyCost = ({ energyCost, x, y, width, height }: EnergyProps) => {
-  const [image] = useImage(
-    "https://cdn.onlinewebfonts.com/svg/img_449763.png",
-    "anonymous"
-  );
-  const fontSize = 0.9 * Math.min(width, height);
+  const fontSize = Math.sqrt(width * height) / 2;
   const text = energyCost + "E";
 
   return (
@@ -26,8 +20,6 @@ const EnergyCost = ({ energyCost, x, y, width, height }: EnergyProps) => {
         width={width}
         height={height}
         fill="transparent"
-        shadowBlur={10}
-        shadowColor="black"
         stroke="black"
       />
       <Text

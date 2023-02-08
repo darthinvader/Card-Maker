@@ -1,5 +1,6 @@
 import { Layer, Stage } from "react-konva";
 
+import ActionType from "./ActionType";
 import Border from "./Border";
 import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
@@ -11,6 +12,7 @@ export type ActionCardProps = {
   width: number;
   height: number;
   title: string;
+  actionType: string;
   url: string;
   energyCost: number;
   moneyCost: number;
@@ -22,6 +24,7 @@ const ActionCard = ({
   width,
   height,
   title,
+  actionType,
   url,
   energyCost,
   moneyCost,
@@ -29,6 +32,8 @@ const ActionCard = ({
   funtext,
 }: ActionCardProps) => {
   const leftPadding = 0.1 * width;
+  const smallLeftPadding = 0.015 * width;
+  const endleftPadding = 0.8 * width;
   const titlePaddingTop = 0.01 * height;
   const imagePaddignTop = 0.1 * height;
   const imageHeight = 0.3 * height;
@@ -39,13 +44,23 @@ const ActionCard = ({
   const funTextHeight = 0.2 * height;
   const moneyCostHeight = 0.1 * height;
   const moneyCostPaddingTop = 0.9 * height;
+  const CardActionType = () => (
+    <ActionType
+      x={smallLeftPadding}
+      y={titlePaddingTop}
+      width={0.15 * width}
+      height={0.08 * height}
+      variant={actionType}
+    />
+  );
+
   const CardEnergyCost = () => (
     <EnergyCost
-      x={10}
-      y={10}
+      x={0.835 * width}
+      y={titlePaddingTop}
       energyCost={energyCost}
       width={0.15 * width}
-      height={0.07 * height}
+      height={0.08 * height}
     />
   );
 
@@ -103,6 +118,7 @@ const ActionCard = ({
     <Stage width={width} height={height}>
       <Layer>
         <Border width={width} height={height} />
+        <CardActionType />
         <CardEnergyCost />
         <CardTitle />
         <CardImage />

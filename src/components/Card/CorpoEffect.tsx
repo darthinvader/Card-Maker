@@ -40,23 +40,23 @@ const CorpoEffect = ({
   const funTextPaddingTop = 0.6 * height;
   const funTextHeight = 0.4 * height;
   const moneyHeight = 0.1 * height;
-  const speedHeight = 0.1 * height;
+  const speedHeight = 0.2 * height;
   const moneyFontSize = 0.1 * height;
   const CardEnergyCost = () => (
     <EnergyCost
       x={0.85 * width}
-      y={0.4 * height}
+      y={0.2 * height}
       energyCost={energyCost}
       width={0.15 * width}
-      height={0.07 * height}
+      height={speedHeight}
     />
   );
   const CardSpeedCost = () => (
     <SpeedCost
       speedCost={speedCost}
       x={0.85 * width}
-      y={0.7 * height}
-      width={width}
+      y={0.6 * height}
+      width={0.15 * width}
       height={speedHeight}
     />
   );

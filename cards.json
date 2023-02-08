@@ -3,24 +3,25 @@
     {
       "cardType": "Corporation",
       "logo": "imageUrl",
-      "name": "MegaHard Drives",
+      "title": "MegaHard Drives",
       "energyCost1": "2",
       "speedCost1": "2",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
       "money1": "5",
-      "effect1": "",
+      "effect1": "Effect1",
       "funtext1": "You throw hard drives at the viewers. Two injuries occured.",
       "energyCost2": "4",
       "speedCost2": "4",
       "money2": "12",
-      "effect2": "",
+      "effect2": "Bigger Effect2 ",
       "funtext2": "Also 1 fatality"
-    }
+    } 
   ],
   "pitStop": [
     {
       "cardType": "Pit Stop",
-      "logo": "imageUrl",
-      "name": "Luig1 the flash",
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Luig1 the flash",
       "effect": "Go to the track",
       "funtext": "Fastest Wheel Changer on the planet. Works as intern."
     }
@@ -29,7 +30,8 @@
     {
       "cardType": "Action",
       "logo": "imageUrl",
-      "name": "Turbo",
+      "imageUrl": "https://media.hinrichfoundation.com/media/x51ag21x/carputer-parts.png",
+      "title": "Turbo",
       "actionType": "Performance",
       "energyCost": "6",
       "effect": "Gain 8 Speed",

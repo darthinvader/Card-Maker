@@ -1,7 +1,5 @@
 import { Image, Layer, Rect, Text } from "react-konva";
 
-import useImage from "use-image";
-
 export type SpeedCostProps = {
   speedCost: number;
   x: number;
@@ -11,12 +9,8 @@ export type SpeedCostProps = {
 };
 
 const SpeedCost = ({ speedCost, x, y, width, height }: SpeedCostProps) => {
-  const [image] = useImage(
-    "https://cdn-icons-png.flaticon.com/512/2612/2612924.png",
-    "anonymous"
-  );
+  const fontSize = Math.sqrt(width * height) / 2;
   const text = speedCost + "S";
-  const fontSize = 0.9 * Math.min(width, height);
 
   return (
     <>
@@ -26,11 +20,18 @@ const SpeedCost = ({ speedCost, x, y, width, height }: SpeedCostProps) => {
         width={width}
         height={height}
         fill="transparent"
-        shadowBlur={10}
-        shadowColor="black"
         stroke="black"
       />
-      <Text x={x} y={y} text={text} fontSize={fontSize} />
+      <Text
+        x={x}
+        y={y}
+        text={text}
+        fontSize={fontSize}
+        width={width}
+        height={height}
+        align="center"
+        verticalAlign="middle"
+      />
     </>
   );
 };
