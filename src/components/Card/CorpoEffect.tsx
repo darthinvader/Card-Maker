@@ -44,19 +44,19 @@ const CorpoEffect = ({
   const moneyFontSize = 0.1 * height;
   const CardEnergyCost = () => (
     <EnergyCost
-      x={0.85 * width}
-      y={0.2 * height}
+      x={0.9 * width}
+      y={0.1 * height}
       energyCost={energyCost}
-      width={0.15 * width}
+      width={0.1 * width}
       height={speedHeight}
     />
   );
   const CardSpeedCost = () => (
     <SpeedCost
       speedCost={speedCost}
-      x={0.85 * width}
-      y={0.6 * height}
-      width={0.15 * width}
+      x={0.9 * width}
+      y={0.5 * height}
+      width={0.1 * width}
       height={speedHeight}
     />
   );
