@@ -4,12 +4,12 @@ export type TitleProps = {
   x: number;
   y: number;
   width: number;
-  height?: number;
-  fontSize: number;
+  height: number;
   text: string;
 };
 
-const Title = ({ x, y, width, height, fontSize, text }: TitleProps) => {
+const Title = ({ x, y, width, height, text }: TitleProps) => {
+  const fontSize = (6 * Math.sqrt(width * height)) / (text.length + 20);
   return (
     <Text
       x={x}
@@ -19,6 +19,7 @@ const Title = ({ x, y, width, height, fontSize, text }: TitleProps) => {
       fontSize={fontSize}
       text={text}
       align="center"
+      verticalAlign="middle"
     />
   );
 };

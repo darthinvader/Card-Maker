@@ -60,9 +60,8 @@ const CorpoCard = ({
       x={leftPadding}
       y={titlePaddingTop}
       width={middleWidth}
-      height={0.05 * height}
+      height={0.09 * height}
       text={title}
-      fontSize={0.05 * height}
     />
   );
   const CardImage = () => (

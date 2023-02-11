@@ -1,35 +1,282 @@
 {
   "corpo": [
     {
-      "cardType": "Corporation",
-      "logo": "imageUrl",
       "title": "MegaHard Drives",
-      "energyCost1": "2",
+      "speedCost1": "1",
+      "energyCost1": "3",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "6",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "2",
+      "energyCost2": "3",
+      "money2": "9",
+      "effect2": "",
+      "funtext2": ""
+    },
+    {
+      "title": "Big Boy Gunz",
+      "speedCost1": "1",
+      "energyCost1": "1",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "4",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "2",
+      "energyCost2": "2",
+      "money2": "7",
+      "effect2": "You may purchase an attack card from the active upgrades without spending an action.",
+      "funtext2": ""
+    },
+    {
+      "title": "Cheetah!",
       "speedCost1": "2",
+      "energyCost1": "0",
       "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
       "money1": "5",
-      "effect1": "Effect1",
-      "funtext1": "You throw hard drives at the viewers. Two injuries occured.",
-      "energyCost2": "4",
-      "speedCost2": "4",
-      "money2": "12",
-      "effect2": "Bigger Effect2 ",
-      "funtext2": "Also 1 fatality"
-    } 
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "0",
+      "energyCost2": "6",
+      "money2": "4",
+      "effect2": "Gain 2 Speed",
+      "funtext2": ""
+    },
+    {
+      "title": "Kilometer High Club!",
+      "speedCost1": "0",
+      "energyCost1": "1",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "2",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "1",
+      "energyCost2": "0",
+      "money2": "4",
+      "effect2": "Gain 2 Speed",
+      "funtext2": ""
+    },
+    {
+      "title": "Neon Light District",
+      "speedCost1": "2",
+      "energyCost1": "1",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "6",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "2",
+      "energyCost2": "3",
+      "money2": "9",
+      "effect2": "",
+      "funtext2": ""
+    },
+    {
+      "title": "Baba Lee",
+      "speedCost1": "1",
+      "energyCost1": "1",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "3",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "2",
+      "energyCost2": "2",
+      "money2": "0",
+      "effect2": "Play the cheapest upgrade card from the active upgreades and remove it from play without spending an actions",
+      "funtext2": ""
+    },
+    {
+      "title": "The Tyred(ZZZ) Company",
+      "speedCost1": "0",
+      "energyCost1": "0",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "1",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "0",
+      "energyCost2": "1",
+      "money2": "3",
+      "effect2": "",
+      "funtext2": ""
+    },
+    {
+      "title": "OOgoolee BOOgoolee Search",
+      "speedCost1": "0",
+      "energyCost1": "0",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "1",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "0",
+      "energyCost2": "1",
+      "money2": "3",
+      "effect2": "",
+      "funtext2": ""
+    },
+    {
+      "title": "Blue Taurus Energy",
+      "speedCost1": "1",
+      "energyCost1": "2",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "5",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "2",
+      "energyCost2": "1",
+      "money2": "4",
+      "effect2": "Gain 3 Energy",
+      "funtext2": ""
+    },
+    {
+      "title": "Musaka",
+      "speedCost1": "0",
+      "energyCost1": "0",
+      "imageUrl": "https://thumbs.dreamstime.com/z/letter-p-logo-modern-business-corporate-symbol-design-set-60965417.jpg",
+      "money1": "1",
+      "effect1": "",
+      "funtext1": "",
+      "speedCost2": "1",
+      "energyCost2": "1",
+      "money2": "5",
+      "effect2": "",
+      "funtext2": ""
+    }
   ],
   "pitStop": [
     {
-      "cardType": "Pit Stop",
       "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
-      "title": "Luig1 the flash",
-      "effect": "Go to the track",
+      "title": "Guido the flash",
+      "effect": "Go to the track immediately without spending an action",
       "funtext": "Fastest Wheel Changer on the planet. Works as intern."
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Cashew the Cashier",
+      "effect": "You may purchase one upgrade card from the active upgrades reducing it's cost by one and without spending an action",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Tommy the trainee",
+      "effect": "Pay 1M. Gain 1(one) Speed or Gain 1(one) Energy",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Gunnar the goon",
+      "effect": "Deal 1(one) damage to a car",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Bucky the lucky",
+      "effect": "Draw 1(one) card from your deck",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Sotiris the Zoomer",
+      "effect": "Gain 1(one) Speed",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Zeus the fuse",
+      "effect": "Gain 1(one) Energy",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Danny the dealer",
+      "effect": "You may make a purchase action without spending an action",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Axel the accelerator",
+      "effect": "Draw 2(two) cards from your deck and discard 1(one) of them",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Tony the terrible",
+      "effect": "Gain 2M, Lose 1 Energy",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Manny the manager",
+      "effect": "Draw and play the first card from the Pit stop deck",
+      "funtext": "I'll just delegate that"
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Bobby the banker",
+      "effect": "Gain 1M",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Marika the watcher",
+      "effect": "See the top 3 cards from your deck. Put them back in any order",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "H@il3y the H4X0R",
+      "effect": "Remove 1 speed from a car",
+      "funtext": "31337 H4X0R"
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Jonathan the goldfinger",
+      "effect": "You may purchase a random maneuver card from the upgrade deck",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Cody the c0der",
+      "effect": "You may purchase a random hacking card from the upgrade deck",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Tanya the tuner",
+      "effect": "You may purchase a random performance card from the upgrade deck",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Guy Thompson",
+      "effect": "You may purchase a random attack card from the upgrade deck",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Spyro the Spy",
+      "effect": "Choose a player and see the cards in their hands",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Percival Plinktron",
+      "effect": "You may purchase a random card from the upgrade deck that contains 'Plink' in its title",
+      "funtext": ""
+    },
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Sylvia the Sly",
+      "effect": "Remove 1 energy from a car",
+      "funtext": ""
+    }
+    {
+      "imageUrl": "https://staticg.sportskeeda.com/wp-content/uploads/2015/10/a-1445690699-800.jpg",
+      "title": "Jerry the Janitor",
+      "effect": "Choose a card from your hand or deck and remove it from play",
+      "funtext": ""
     }
   ],
   "action": [
     {
-      "cardType": "Action",
-      "logo": "imageUrl",
       "imageUrl": "https://media.hinrichfoundation.com/media/x51ag21x/carputer-parts.png",
       "title": "Turbo",
       "actionType": "Performance",

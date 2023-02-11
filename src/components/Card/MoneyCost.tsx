@@ -11,12 +11,8 @@ export type MoneyCostProps = {
 };
 
 const MoneyCost = ({ moneyCost, x, y, width, height }: MoneyCostProps) => {
-  const [image] = useImage(
-    "https://cdn3.iconfinder.com/data/icons/currency-7/512/bitcoin_money_currency_finance_-512.png",
-    "anonymous"
-  );
   const moneyCostString = moneyCost + "M";
-  const fontSize = 0.7 * Math.min(height, width);
+  const fontSize = Math.sqrt(width * height) / 5;
   const points = [0, 0, width, 0];
   return (
     <>

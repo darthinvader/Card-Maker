@@ -23,47 +23,53 @@ function App() {
 
   return (
     <div className="flex flex-row gap-5 m-5">
-      {corpo?.map((corpoCard) => (
-        <CorpoCard
-          height={600}
-          width={400}
-          title={corpoCard.title}
-          url={corpoCard.imageUrl}
-          energyCost1={corpoCard.energyCost1}
-          speedCost1={corpoCard.speedCost1}
-          money1={corpoCard.money1}
-          effect1={corpoCard.effect1}
-          funtext1={corpoCard.funtext1}
-          energyCost2={corpoCard.energyCost2}
-          speedCost2={corpoCard.speedCost2}
-          money2={corpoCard.money2}
-          effect2={corpoCard.effect2}
-          funtext2={corpoCard.funtext2}
-        />
-      ))}
-      {pitStop?.map((pitStopCard) => (
-        <PitStopCard
-          width={400}
-          height={600}
-          title={pitStopCard.title}
-          url={pitStopCard.imageUrl}
-          effect={pitStopCard.effect}
-          funtext={pitStopCard.funtext}
-        />
-      ))}
-      {action?.map((actionCard) => (
-        <ActionCard
-          width={400}
-          height={600}
-          title={actionCard.title}
-          url={actionCard.imageUrl}
-          effect={actionCard.effect}
-          actionType={actionCard.actionType}
-          funtext={actionCard.funtext}
-          energyCost={actionCard.energyCost}
-          moneyCost={actionCard.moneyCost}
-        />
-      ))}
+      <div className="flex gap-5 flex-col">
+        {corpo?.map((corpoCard) => (
+          <CorpoCard
+            height={600}
+            width={400}
+            title={corpoCard.title}
+            url={corpoCard.imageUrl}
+            energyCost1={corpoCard.energyCost1}
+            speedCost1={corpoCard.speedCost1}
+            money1={corpoCard.money1}
+            effect1={corpoCard.effect1}
+            funtext1={corpoCard.funtext1}
+            energyCost2={corpoCard.energyCost2}
+            speedCost2={corpoCard.speedCost2}
+            money2={corpoCard.money2}
+            effect2={corpoCard.effect2}
+            funtext2={corpoCard.funtext2}
+          />
+        ))}
+      </div>
+      <div className="flex gap-5 flex-col">
+        {pitStop?.map((pitStopCard) => (
+          <PitStopCard
+            width={400}
+            height={600}
+            title={pitStopCard.title}
+            url={pitStopCard.imageUrl}
+            effect={pitStopCard.effect}
+            funtext={pitStopCard.funtext}
+          />
+        ))}
+      </div>
+      <div className="flex gap-5 flex-col">
+        {action?.map((actionCard) => (
+          <ActionCard
+            width={400}
+            height={600}
+            title={actionCard.title}
+            url={actionCard.imageUrl}
+            effect={actionCard.effect}
+            actionType={actionCard.actionType}
+            funtext={actionCard.funtext}
+            energyCost={actionCard.energyCost}
+            moneyCost={actionCard.moneyCost}
+          />
+        ))}
+      </div>
     </div>
     // <div className="flex flex-row">
     // <PitStopCard

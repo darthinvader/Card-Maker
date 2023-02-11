@@ -1,12 +1,8 @@
-import { Layer, Line } from "react-konva";
+import { Layer, Line, Text } from "react-konva";
 
 import ContainedText from "./ContainedText";
 import EnergyCost from "./EnergyCost";
-import MoneyCost from "./MoneyCost";
-import OrLine from "./OrLine";
-import SimpleLine from "./SimpleLine";
 import SpeedCost from "./SpeedCost";
-import Title from "./Title";
 import WallLine from "./WallLine";
 
 export type CorpoEffectProps = {
@@ -41,7 +37,7 @@ const CorpoEffect = ({
   const funTextHeight = 0.4 * height;
   const moneyHeight = 0.1 * height;
   const speedHeight = 0.2 * height;
-  const moneyFontSize = 0.1 * height;
+  const moneyFontSize = Math.sqrt(moneyHeight * middleWidth) / 2.5;
   const CardEnergyCost = () => (
     <EnergyCost
       x={0.9 * width}
@@ -81,13 +77,15 @@ const CorpoEffect = ({
   );
 
   const CardMoneyCost = () => (
-    <Title
+    <Text
       x={0}
       y={0}
       text={money.toString() + "M"}
       width={width}
       height={moneyHeight}
       fontSize={moneyFontSize}
+      align="center"
+      verticalAlign="middle"
     />
   );
   const CardWallLine = () => (

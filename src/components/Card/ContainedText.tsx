@@ -17,11 +17,7 @@ const ContainedText = ({
   height,
   italics,
 }: ContainedTextProps) => {
-  const maxSize = Math.sqrt(width * height) / 8;
-  const minSize = Math.sqrt(width * height) / 10;
-  let fontSize = Math.sqrt(height * width) / Math.floor(text.length / 10);
-  fontSize = Math.min(maxSize, fontSize);
-  fontSize = Math.max(minSize, fontSize);
+  let fontSize = (15 * Math.sqrt(width * height)) / (text.length + 100);
   return (
     <Text
       x={x}
